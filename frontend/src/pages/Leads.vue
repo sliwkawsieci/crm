@@ -377,7 +377,7 @@ function getGroupedByRows(listRows, groupByField, columns) {
 
     let groupDetail = {
       label: groupByField.label,
-      group: option || __(' '),
+      group: option ? __(option) : __(' '),
       collapsed: false,
       rows: parseRows(filteredRows, columns),
     }
